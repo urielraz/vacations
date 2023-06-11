@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "e2aca609-9b60-4ccf-af55-00ac800810af",
+		"name": "vacations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all vacations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get image by vacation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all followers by user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/followers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"followers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFollowByUserAndVacation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/followers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"followers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCountOfFollowersByVacation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/followers/getCountOfFollowersByVacation/57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"followers",
+						"getCountOfFollowersByVacation",
+						"57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeFollowByUserAndVacation Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/followers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"followers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete vacation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjMsImZpcnN0TmFtZSI6Im5hbWVPZlRoZUFkbWluIiwibGFzdE5hbWUiOiJsYXN0TmFtZU9mVGhlQWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluIn0sImlhdCI6MTY3NTk1MjQwMiwiZXhwIjoxNjc1OTYzMjAyfQ.CL4lm8q85sxdwCg_dwOTwQ0vfxgeSMoWErDrVdHVRvU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete followers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post new vacation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjMsImZpcnN0TmFtZSI6Im5hbWVPZlRoZUFkbWluIiwibGFzdE5hbWUiOiJsYXN0TmFtZU9mVGhlQWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluIn0sImlhdCI6MTY3NTk5MTEwNCwiZXhwIjoxNjc2MDAxOTA0fQ.zClJwjXmasXj5Mqv2YkzvkSm_o5xox8KYNOvir9PV7E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "sunni plusss!!",
+							"type": "default"
+						},
+						{
+							"key": "destination",
+							"value": "miami3334",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/1urie/Downloads/Downtown_Miami2.jpg"
+						},
+						{
+							"key": "dateStart",
+							"value": "2023-02-01",
+							"type": "default"
+						},
+						{
+							"key": "dateEnd",
+							"value": "2023-02-08",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "588",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update vacation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjMsImZpcnN0TmFtZSI6Im5hbWVPZlRoZUFkbWluIiwibGFzdE5hbWUiOiJsYXN0TmFtZU9mVGhlQWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluIn0sImlhdCI6MTY3NTk5MTEwNCwiZXhwIjoxNjc2MDAxOTA0fQ.zClJwjXmasXj5Mqv2YkzvkSm_o5xox8KYNOvir9PV7E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "ausralia with img",
+							"type": "default"
+						},
+						{
+							"key": "destination",
+							"value": "sidny",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/1urie/Downloads/photo-1523482580672-f109ba8cb9be.jpg"
+						},
+						{
+							"key": "dateStart",
+							"value": "2023-02-01",
+							"type": "default"
+						},
+						{
+							"key": "dateEnd",
+							"value": "2023-02-08",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "1500",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post new follow",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfaWQiOjMsImZpcnN0TmFtZSI6Im5hbWVPZlRoZUFkbWluIiwibGFzdE5hbWUiOiJsYXN0TmFtZU9mVGhlQWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluIn0sImlhdCI6MTY3NTk5MTEwNCwiZXhwIjoxNjc2MDAxOTA0fQ.zClJwjXmasXj5Mqv2YkzvkSm_o5xox8KYNOvir9PV7E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/followers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"followers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "sunni plus",
+							"type": "default"
+						},
+						{
+							"key": "destination",
+							"value": "miami3",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/1urie/Downloads/Downtown_Miami.jpg"
+						},
+						{
+							"key": "dateStart",
+							"value": "2023-02-01",
+							"type": "default"
+						},
+						{
+							"key": "dateEnd",
+							"value": "2023-02-08",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "588",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/vacations/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"vacations",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"newUser\",\"lastName\":\"new\",\"username\":\"newuser\",\"password\":\"1234\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

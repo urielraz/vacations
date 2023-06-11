@@ -1,0 +1,8 @@
+admin
+1234
+
+user
+1234
+
+newuser
+1234
