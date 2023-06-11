@@ -1,0 +1,24 @@
+.UpdateVacation {
+	
+}
+
+.UpdateVacation h2{
+	text-align: center;
+}
+
+.UpdateVacation form{
+    background: rgba(255, 255, 255, 0.585);
+    max-width: 350px;
+    margin: auto;
+    border: 1px solid lightblue;
+    padding: 20px;
+}
+
+
+.UpdateVacation label{
+    display: block;
+}
+
+.UpdateVacation label span{
+    display: block;
+}

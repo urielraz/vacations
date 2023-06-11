@@ -1,0 +1,53 @@
+.VacataionCard {
+    padding: 10px;
+    border: 1px solid lightblue;
+    display: inline-block;
+    box-shadow: 5px 5px 5px 5px gray;
+    text-align: center;
+    min-width: 350px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.VacataionCard h6 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.VacataionCard img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.VacataionCard button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    /* margin: 50px; */
+    background-color: aliceblue;
+    color: brown;
+    margin-left: 1px;
+}
+
+.VacataionCard button:hover{
+    color:  aliceblue;
+    background-color: brown;
+
+}
+
+.VacataionCard form{
+    gap: 0px;
+    padding: 0px;
+    display: flex;
+    max-width: 0px;
+    margin: auto;
+    border-radius: 0px;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px grey;
+    min-width: 0px;
+    display: inline-block;
+}
